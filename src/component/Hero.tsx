@@ -3,12 +3,11 @@ function Hero() {
   return (
     <Box
       sx={{
-        backgroundImage:
-          "url(https://yellowzebrasafaris.com/media/gx3o5yvr/fly-camping-kicheche-bush-camp-greater-mara-conservancies-kenya.jpg?rxy=0.5075150071260686%2C0.8362877070446325&width=2048&height=1024&format=jpg&v=1db7641a2995070)",
+        backgroundImage: "url(/heroImage.jpg)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        borderBottomRightRadius: "4rem",
-        borderBottomLeftRadius: "4rem",
+        borderBottomRightRadius: "10rem",
+        borderBottomLeftRadius: "10rem",
         overflow: "hidden",
       }}
     >
