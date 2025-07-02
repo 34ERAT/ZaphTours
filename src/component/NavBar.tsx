@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <>
       <Box>
-        <AppBar position="fixed" sx={{ background: "transparent" }}>
+        <AppBar position="fixed" color="secondary">
           <Container maxWidth="xl">
             <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
               <Logo />
