@@ -6,7 +6,7 @@ function Testimonials() {
   return (
     <Box p={5} justifyContent={"center"}>
       <Stack alignItems={"center"} spacing={6}>
-        <img src="/rating.png" width={70} />
+        <img src="/rating.png" width={90} />
         <Typography
           gutterBottom
           textAlign={"center"}
