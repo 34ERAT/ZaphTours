@@ -22,7 +22,7 @@ function NavLinks() {
       </Link>
       <Link to={"Destinations"} style={style}>
         <Typography textTransform="capitalize" variant="h6">
-          Destionations
+          Destinations
         </Typography>
       </Link>
       <Link to={"TripTypes"} style={style}>
