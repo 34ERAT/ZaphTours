@@ -1,3 +1,4 @@
+import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
 import {
   Button,
   Card,
@@ -38,7 +39,9 @@ function TripCard({ heading, price, body, images }: Props) {
           alignItems={"center"}
           width={"100%"}
         >
-          <Button href="#">Learn More</Button>
+          <Button startIcon={<CurrencyExchangeIcon />} variant="contained">
+            {price}
+          </Button>
         </Stack>
       </CardActions>
     </Card>
