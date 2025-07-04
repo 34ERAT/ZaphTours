@@ -23,8 +23,17 @@ function DestionationCard({
   groupCost,
   soloPrice,
 }: Props) {
+  //TODO: align the action buttons at the bottom of the container
   return (
-    <Card sx={{ borderRadius: 2, maxWidth: "20rem", m: 4 }}>
+    <Card
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        borderRadius: 2,
+        maxWidth: "20rem",
+      }}
+    >
       <CardMedia component={"img"} height={250} image={image} />
       <CardContent>
         <Typography variant="h6" fontWeight={700}>
