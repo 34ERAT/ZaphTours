@@ -36,10 +36,12 @@ function DestionationCard({
     >
       <CardMedia component={"img"} height={250} image={image} />
       <CardContent>
-        <Typography variant="h6" fontWeight={700}>
+        <Typography variant="h6" color="textSecondary" fontWeight={700}>
           {name}
         </Typography>
-        <Typography variant="body2">{descripion}</Typography>
+        <Typography variant="body2" color="textSecondary">
+          {descripion}
+        </Typography>
       </CardContent>
       <CardActions>
         <Stack

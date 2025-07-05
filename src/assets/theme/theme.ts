@@ -8,8 +8,13 @@ export const theme = createTheme({
     secondary: {
       main: "#eeeeee",
     },
-    text: {
-      secondary: "rgb(255,255,255)",
+    background: {
+      default: "#eeeeee",
     },
+
+    // text: {
+    //   primary: "#ffffff",
+    //   secondary: "#000000",
+    // },
   },
 });

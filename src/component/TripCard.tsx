@@ -27,10 +27,12 @@ function TripCard({ heading, price, body, images }: Props) {
     >
       <CardMedia component={"img"} height={250} image={images[1]} />
       <CardContent>
-        <Typography variant="h6" fontWeight={700}>
+        <Typography color="textSecondary" variant="h6" fontWeight={700}>
           {heading}
         </Typography>
-        <Typography variant="body2">{body}</Typography>
+        <Typography color="textSecondary" variant="body2">
+          {body}
+        </Typography>
       </CardContent>
       <CardActions>
         <Stack

@@ -6,8 +6,8 @@ function Hero() {
         backgroundImage: "url(/heroImage.jpg)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        borderBottomRightRadius: "10rem",
-        borderBottomLeftRadius: "10rem",
+        borderBottomRightRadius: "3rem",
+        borderBottomLeftRadius: "3rem",
         overflow: "hidden",
       }}
     >
@@ -30,23 +30,23 @@ function Hero() {
           width="35rem"
         >
           <Typography
-            color="textSecondary"
             variant="h2"
             textAlign="center"
             fontWeight={900}
+            sx={{ color: "#ffffff" }}
           >
             Find Youself
           </Typography>
           <Typography
-            color="textSecondary"
             variant="h2"
             textAlign="center"
             fontWeight={900}
+            sx={{ color: "#ffffff" }}
             gutterBottom
           >
             outside.
           </Typography>
-          <Typography color="textSecondary" textAlign="center">
+          <Typography sx={{ color: "#ffffff" }} textAlign="center">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
             suscipit enim dolore voluptatem. Corporis, quasi sunt!{" "}
           </Typography>
