@@ -11,10 +11,5 @@ export const theme = createTheme({
     background: {
       default: "#eeeeee",
     },
-
-    // text: {
-    //   primary: "#ffffff",
-    //   secondary: "#000000",
-    // },
   },
 });

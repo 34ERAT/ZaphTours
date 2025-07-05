@@ -1,7 +1,7 @@
 import { Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-function NavLinks() {
+function NavLinks({ row }: { row: boolean }) {
   const style = {
     textDecoration: "none",
     color: "inherit",
@@ -9,11 +9,10 @@ function NavLinks() {
 
   return (
     <Stack
-      direction="row"
+      direction={row ? "row" : "column"}
       justifyContent="center"
       alignItems="center"
       spacing={2}
-      sx={{ display: { xs: "none", md: "flex" } }}
     >
       <Link to={"/"} style={style}>
         <Typography textTransform="capitalize" variant="h6">
