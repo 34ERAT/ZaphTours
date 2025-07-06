@@ -1,6 +1,6 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import { Link } from "react-router-dom";
-
+import MuiLink from "@mui/material/Link";
 function NavLinks({ row }: { row: boolean }) {
   const style = {
     textDecoration: "none",
@@ -15,24 +15,48 @@ function NavLinks({ row }: { row: boolean }) {
       spacing={2}
     >
       <Link to={"/"} style={style}>
-        <Typography textTransform="capitalize" variant="h6">
+        <MuiLink
+          component={"p"}
+          textTransform="capitalize"
+          color="inherit"
+          underline="hover"
+          variant="h6"
+        >
           home
-        </Typography>
+        </MuiLink>
       </Link>
       <Link to={"Destinations"} style={style}>
-        <Typography textTransform="capitalize" variant="h6">
+        <MuiLink
+          component={"p"}
+          color="inherit"
+          underline="hover"
+          textTransform="capitalize"
+          variant="h6"
+        >
           Destinations
-        </Typography>
+        </MuiLink>
       </Link>
       <Link to={"TripTypes"} style={style}>
-        <Typography textTransform="capitalize" variant="h6">
+        <MuiLink
+          component={"p"}
+          color="inherit"
+          underline="hover"
+          textTransform="capitalize"
+          variant="h6"
+        >
           Trip types
-        </Typography>
+        </MuiLink>
       </Link>
       <Link to={"ContactUs"} style={style}>
-        <Typography textTransform="capitalize" variant="h6">
+        <MuiLink
+          color="inherit"
+          component={"p"}
+          underline="hover"
+          textTransform="capitalize"
+          variant="h6"
+        >
           contact Us
-        </Typography>
+        </MuiLink>
       </Link>
     </Stack>
   );

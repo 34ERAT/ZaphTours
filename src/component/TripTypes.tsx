@@ -13,7 +13,7 @@ const triptypes = [
   "wellness retreats",
   "culinary tours",
 ];
-const imageList = [1, 2];
+const imageList = ["/wildLifeSafari.jpg", "/culture.jpg", "/Advanture.jpg"];
 function TripTypes() {
   return (
     <Box mt={"6rem"}>
@@ -30,7 +30,7 @@ function TripTypes() {
               body={faker.lorem.paragraph(4)}
               key={index}
               price={faker.number.int({ min: 200, max: 700 })}
-              images={imageList.map(() => "/heroImage.jpg")}
+              images={imageList}
             />
           ))}
         </Stack>

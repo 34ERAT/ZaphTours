@@ -5,9 +5,11 @@ import {
   CardActions,
   CardContent,
   CardMedia,
+  Pagination,
   Stack,
   Typography,
 } from "@mui/material";
+import { useState } from "react";
 type Props = {
   heading: string;
   body: string;
@@ -15,6 +17,7 @@ type Props = {
   images: string[];
 };
 function TripCard({ heading, price, body, images }: Props) {
+  const [page, setPage] = useState(0);
   return (
     <Card
       sx={{
@@ -25,7 +28,20 @@ function TripCard({ heading, price, body, images }: Props) {
         justifyContent: "space-between",
       }}
     >
-      <CardMedia component={"img"} height={250} image={images[1]} />
+      <CardMedia component={"img"} height={250} image={images[page]} />
+      <CardActions>
+        <Stack direction={"row"} p={1} width={"100%"} justifyContent={"center"}>
+          <Pagination
+            onChange={(_event, page) => setPage(page - 1)}
+            count={3}
+            color="primary"
+            variant="outlined"
+            size="small"
+            hidePrevButton
+            hideNextButton
+          />
+        </Stack>
+      </CardActions>
       <CardContent>
         <Typography color="textSecondary" variant="h6" fontWeight={700}>
           {heading}

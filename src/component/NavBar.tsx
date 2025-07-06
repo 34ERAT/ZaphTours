@@ -44,7 +44,12 @@ function NavBar() {
               >
                 Get started
               </Button>
-              <Drawer sx={{ p: 4 }} open={open} onClick={() => setOpen(false)}>
+              <Drawer
+                anchor="right"
+                sx={{ p: 4 }}
+                open={open}
+                onClick={() => setOpen(false)}
+              >
                 <Stack sx={{ display: { xs: "flex", md: "none" }, p: 4 }}>
                   <NavLinks row={false} />
                 </Stack>
